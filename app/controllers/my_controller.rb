@@ -48,7 +48,6 @@ class MyController < ApplicationController
                      'issuesreportedbyme'         => :label_reported_work_packages,
                      'issueswatched'              => :label_watched_work_packages,
                      'news'                       => :label_news_latest,
-                     'calendar'                   => :label_calendar,
                      'timelog'                    => :label_spent_time
            }.freeze
 

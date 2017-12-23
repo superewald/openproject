@@ -257,12 +257,6 @@ Redmine::MenuManager.map :project_menu do |menu|
             caption: :'timelines.project_menu.timelines',
             icon: 'icon2 icon-view-timeline'
 
-  menu.push :calendar,
-            { controller: '/work_packages/calendars', action: 'index' },
-            param: :project_id,
-            caption: :label_calendar,
-            icon: 'icon2 icon-calendar'
-
   menu.push :news,
             { controller: '/news', action: 'index' },
             param: :project_id,

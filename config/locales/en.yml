@@ -101,8 +101,6 @@ en:
       further_information_before: "Please take a look at"
       link_name: "how to migrate to the new timeline."
       further_information_after: ""
-    calendar:
-      removal: "Please note: This module is going to be removed with OpenProject 8.0."
 
   groups:
     index:
@@ -1067,8 +1065,6 @@ en:
   label_branch: "Branch"
   label_browse: "Browse"
   label_bulk_edit_selected_work_packages: "Bulk edit selected work packages"
-  label_calendar: "Calendar"
-  label_calendar_show: "Show Calendar"
   label_category: "Category"
   label_wiki_menu_item: Wiki menu item
   label_select_main_menu_item: Select new main menu item
@@ -1541,7 +1537,6 @@ en:
   label_keyboard_shortcut_go_work_package: "Go to project work packages"
   label_keyboard_shortcut_go_wiki: "Go to project wiki"
   label_keyboard_shortcut_go_activity: "Go to project activities"
-  label_keyboard_shortcut_go_calendar: "Go to project calendar"
   label_keyboard_shortcut_go_news: "Go to project news"
   label_keyboard_shortcut_go_timelines: "Go to timelines"
   label_keyboard_shortcut_new_work_package: "Create new work package"
@@ -1731,7 +1726,6 @@ en:
   permission_save_queries: "Save queries"
   permission_select_project_modules: "Select project modules"
   permission_manage_types: "Select types"
-  permission_view_calendar: "View calendar"
   permission_view_changesets: "View repository revisions in OpenProject"
   permission_view_commit_author_statistics: "View commit author statistics"
   permission_view_work_package_watchers: "View watchers list"
@@ -1764,7 +1758,6 @@ en:
 
   project_module_activity: "Activity"
   project_module_boards: "Forums"
-  project_module_calendar: "Calendar"
   project_module_work_package_tracking: "Work package tracking"
   project_module_news: "News"
   project_module_repository: "Repository"

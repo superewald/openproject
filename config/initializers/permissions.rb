@@ -304,11 +304,6 @@ Redmine::AccessControl.map do |map|
                      require: :loggedin
   end
 
-  map.project_module :calendar do |cal|
-    cal.permission :view_calendar,
-                   :'work_packages/calendars' => [:index]
-  end
-
   map.project_module :activity
 
   map.project_module :timelines do |timelines|

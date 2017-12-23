@@ -78,7 +78,6 @@ describe Redmine do
     assert_menu_contains_item_named :project_menu, :activity
     assert_menu_contains_item_named :project_menu, :roadmap
     assert_menu_contains_item_named :project_menu, :work_packages
-    assert_menu_contains_item_named :project_menu, :calendar
     assert_menu_contains_item_named :project_menu, :news
     assert_menu_contains_item_named :project_menu, :boards
     assert_menu_contains_item_named :project_menu, :repository

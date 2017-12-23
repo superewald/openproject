@@ -54,10 +54,6 @@ class WorkPackagesPage
     visit edit_work_package_path(id)
   end
 
-  def visit_calendar
-    visit index_path + '/calendar'
-  end
-
   def open_settings!
     click_on 'work-packages-settings-button'
   end

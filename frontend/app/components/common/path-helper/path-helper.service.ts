@@ -79,10 +79,6 @@ export class PathHelperService {
     return this.projectPath(projectIdentifier) + '/boards';
   }
 
-  public projectCalendarPath(projectId:string) {
-    return this.projectPath(projectId) + '/work_packages/calendar';
-  }
-
   public projectNewsPath(projectId:string) {
     return this.projectPath(projectId) + '/news';
   }

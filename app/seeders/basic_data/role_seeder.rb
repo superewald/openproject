@@ -72,7 +72,6 @@ module BasicData
           :view_work_package_watchers,
           :add_work_package_watchers,
           :delete_work_package_watchers,
-          :view_calendar,
           :comment_news,
           :manage_news,
           :log_time,
@@ -116,7 +115,6 @@ module BasicData
           :add_work_package_notes,
           :edit_own_work_package_notes,
           :save_queries,
-          :view_calendar,
           :comment_news,
           :view_project_associations,
           :view_timelines,
@@ -140,7 +138,6 @@ module BasicData
     def non_member
       { name: I18n.t(:default_role_non_member), permissions: [
           :view_work_packages,
-          :view_calendar,
           :comment_news,
           :browse_repository,
           :view_changesets,

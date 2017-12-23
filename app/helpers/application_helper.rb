@@ -539,35 +539,6 @@ module ApplicationHelper
     end
   end
 
-  def calendar_for(field_id)
-    include_calendar_headers_tags
-    javascript_tag("jQuery(function() { jQuery('##{field_id}').datepicker(); })")
-  end
-
-  def include_calendar_headers_tags
-    unless @calendar_headers_tags_included
-      @calendar_headers_tags_included = true
-      content_for :header_tags do
-        start_of_week = case Setting.start_of_week.to_i
-                        when 1
-                          '1' # Monday
-                        when 7
-                          '0' # Sunday
-                        when 6
-                          '6' # Saturday
-                        else
-                          # use language (pass a blank string into the JSON object,
-                          # as the datepicker implementation checks for numbers in
-                          # /frontend/app/misc/datepicker-defaults.js:34)
-                          '""'
-        end
-        # FIXME: Get rid of this abomination
-        js = "var CS = { lang: '#{current_language.to_s.downcase}', firstDay: #{start_of_week} };"
-        javascript_tag(js)
-      end
-    end
-  end
-
   # Returns the javascript tags that are included in the html layout head
   def user_specific_javascript_includes
     tags = ''
