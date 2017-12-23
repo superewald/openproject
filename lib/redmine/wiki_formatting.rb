@@ -106,6 +106,7 @@ module Redmine
         @formatters = {}
         register namespace: :null_formatter
         register namespace: :textile
+        register namespace: :markdown
       end
     end
   end
